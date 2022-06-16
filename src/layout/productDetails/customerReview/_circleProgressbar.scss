@@ -1,0 +1,82 @@
+@import "../../../_base.scss";
+
+.review {
+  &_header {
+    margin-bottom: 2rem;
+    font-family: "Playfair Display", sans-serif;
+    letter-spacing: 3.6px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &_value {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_left {
+      margin-right: 2rem;
+    }
+    &_right {
+      display: flex;
+      align-items: center;
+      &_progressbar {
+        margin-left: 16px;
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &_comment {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    &_left {
+      &_name {
+        margin-top: 1.5rem;
+        margin-bottom: 12px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+      }
+      &_comment {
+        margin-top: 1rem;
+        letter-spacing: 0.26px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &_right {
+      font-size: 13px;
+      font-weight: 600;
+      color: gray;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .review {
+    &_value {
+      flex-direction: column;
+      &_left {
+        margin: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &_comment {
+      flex-direction: column;
+      &_right {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

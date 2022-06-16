@@ -1,0 +1,15 @@
+@import "../../../_base.scss";
+
+.productListRightSide-container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  // background: red;
+  // justify-content: space-between;
+}
+
+@media screen and (max-width: $tablet) {
+  .productListRightSide-container {
+    width: 100%;
+  }
+}

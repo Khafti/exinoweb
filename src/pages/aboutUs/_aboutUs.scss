@@ -1,0 +1,27 @@
+.aboutUs {
+  min-height: 100vh;
+  margin-bottom: 3rem;
+}
+
+.aboutUsTop {
+  &_Cntr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    &_title {
+      font-weight: 600;
+      color: #000;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    &_subtitle {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      padding: 20px 0px;
+      font-size: 20px;
+      line-height: 40px;
+      letter-spacing: 2.5px;
+      color: black;
+      text-transform: uppercase;
+    }
+  }
+}

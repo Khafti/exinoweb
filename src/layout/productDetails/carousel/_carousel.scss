@@ -1,0 +1,44 @@
+@import "../../../_base.scss";
+
+.CarouselProductDetails {
+  border-top: 1px solid gray;
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+
+  &_header {
+    padding-bottom: 4rem;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  &_images {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_image {
+    width: 94%;
+  }
+  &_txt {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &_price {
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .CarouselProductDetails_images {
+    display: none;
+  }
+}

@@ -1,0 +1,62 @@
+.CheckboxItems {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  &_header {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  &_box {
+    margin-top: 1rem;
+    //  margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    &_checkbox {
+      // width: 200px;
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+    &_img {
+      width: 140px;
+      height: 140px;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+
+    &_details {
+      &_name {
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+      &_price {
+        margin-top: 1rem;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+  &_bottom {
+    &_title {
+      font-weight: 500;
+      font-size: 12px;
+    }
+    &_subtitle {
+      margin: 3px 0;
+      color: gray;
+      font-size: 12px;
+    }
+    &_txt {
+      margin: 3px 0;
+      color: gray;
+      font-size: 11px;
+    }
+    &_textarea {
+      margin-top: 4px;
+      width: 100%;
+      outline: none;
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+}

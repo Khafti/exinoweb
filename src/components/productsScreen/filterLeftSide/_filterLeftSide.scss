@@ -1,0 +1,78 @@
+@import "../../../_base.scss";
+
+.filterLeftSide {
+  //   background: rgb(231, 219, 219);
+  width: 20%;
+  margin-bottom: 100px;
+  margin-right: 40px;
+  min-width: 210px;
+
+  &_headerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_header {
+    //  font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &_clear-all {
+    cursor: pointer;
+    letter-spacing: 0.24px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    //  border-bottom: 1px solid #000;
+  }
+
+  &_select {
+    display: flex;
+    flex-wrap: wrap;
+    &_item {
+      border: 2px solid #000;
+      width: fit-content;
+      letter-spacing: 0.28px;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 8px;
+      display: flex;
+      align-items: center;
+      margin: 4px;
+    }
+  }
+
+  &_title {
+    //  padding: 15px 0;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  &_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &_item {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.78px;
+    padding: 4px 0;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .filterLeftSide {
+    display: none;
+  }
+}

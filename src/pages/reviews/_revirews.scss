@@ -1,0 +1,105 @@
+@import "../../_base.scss";
+
+.reviewsTop {
+  &_Cntr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    &_title {
+      font-weight: 600;
+      color: #000;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    &_subtitle {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      padding: 20px 0px;
+      font-size: 20px;
+      line-height: 40px;
+      letter-spacing: 2.5px;
+      color: black;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.reviews {
+  min-height: 100vh;
+
+  &_trustpilot {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+
+    &_link {
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 4rem;
+      cursor: pointer;
+    }
+  }
+
+  &_recommended_header {
+    margin: 46px 0 20px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  &_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_item {
+      padding: 16px;
+      width: 20%;
+      min-width: 280px;
+      // border: 1px solid #000;
+      &_img {
+        width: 100%;
+        cursor: pointer;
+      }
+      &_txt {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .reviews {
+    &_trustpilot {
+      font-size: calc(10px + 1vmax);
+
+      &_link {
+        font-size: calc(8px + 2vmax);
+      }
+    }
+
+    &_recommended_header {
+      font-size: calc(12px + 2vmax);
+    }
+
+    &_container {
+      &_item {
+        width: 20%;
+        min-width: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .reviews {
+    &_container {
+      &_item {
+        width: 20%;
+        min-width: 150px;
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+.setSidebarForToggle {
+  position: fixed;
+  height: 100vh;
+  width: 380px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #fff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 450px) {
+  .setSidebarForToggle {
+    width: 300px;
+  }
+}
+
+.SidebarToggleBtn {
+  border: none;
+  background: red;
+  cursor: pointer;
+}
+
+.sidebar-top-part {
+  padding: 25px 22px;
+}
+
+.sidebar-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.sidebar-logo {
+  height: 26px;
+}
+
+.SidebarItems {
+  list-style-type: none;
+}
+.SidebarItem {
+  padding: 14px 0;
+  /* height: 45px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.SidebarItemLink {
+  width: 100%;
+  cursor: pointer;
+}
+
+.SidebarItemContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SidebarItemContainerInner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 1rem;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding-top: 13px;
+}
+
+.SidebarItemContainerInnerMost {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 2rem;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.SidebarItemContainerInnerMostItem {
+  padding-top: 13px;
+}
+
+.navbar-icon-sidebar {
+  height: 12px;
+  color: rgba(0, 0, 0, 0.623);
+}
+/* .SidebarItem:hover {
+  font-size: 20px;
+} */
+.link-sidebar {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* .sidebar-bottom {
+  padding: 25px 22px;
+} */
+.sidebar-bottom-row {
+  display: flex;
+  align-items: center;
+  background: #b6986a;
+  color: #fff;
+  padding: 8px 22px;
+  font-weight: 500;
+}
+
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.translateForSidebar {
+  --tw-translate-x: 0px;
+}
+
+.translateForSidebarNeg {
+  --tw-translate-x: -100%;
+}
+
+@media (min-width: 1025px) {
+  .setSidebarForToggle {
+    display: none;
+  }
+}

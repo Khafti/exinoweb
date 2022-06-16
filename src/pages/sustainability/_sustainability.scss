@@ -1,0 +1,165 @@
+@import "../../_base.scss";
+
+.bannerSustainability {
+  margin-bottom: 80px;
+  background-image: url("https://cdn.oakandluna.com/images/site/sustainability-dt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmin;
+  max-height: 420px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+
+  &_txt {
+    background: #fff;
+    max-width: 70%;
+    padding: 24px;
+
+    div {
+      text-align: center;
+      font-weight: 700;
+      font-size: 25px;
+      border-bottom: none;
+      padding-bottom: 8px;
+      font-family: "Playfair Display", serif;
+      line-height: 40px;
+      letter-spacing: 2.5px;
+      color: black;
+      text-transform: uppercase;
+    }
+
+    span {
+      font-family: "Playfair Display";
+      margin: 10px 0;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.8;
+      padding: 0 30px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 1px;
+      color: #000;
+    }
+  }
+}
+
+.bannerSustainability-Mobi {
+  display: none;
+}
+
+.sustainability {
+  min-height: 100vh;
+  margin-bottom: 3rem;
+
+  &_gallery {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    &_contr {
+      width: 48%;
+      &_image {
+        width: 100%;
+        cursor: pointer;
+      }
+      &_title {
+        text-align: center;
+        padding-top: 4px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.sustainabilityTop {
+  &_Cntr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    &_title {
+      font-weight: 600;
+      color: #000;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    &_subtitle {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      padding: 20px 0px;
+      font-size: 20px;
+      line-height: 40px;
+      letter-spacing: 2.5px;
+      color: black;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .bannerSustainability {
+    display: none;
+  }
+
+  .bannerSustainability-Mobi {
+    display: block;
+    &_img {
+      height: 30vh;
+      width: 100%;
+    }
+    &_txt {
+      background: #fff;
+      max-width: 100%;
+      padding: 24px;
+      text-align: center;
+
+      div {
+        text-align: center;
+        font-weight: 700;
+        border-bottom: none;
+        padding-bottom: 8px;
+        font-family: "Playfair Display", serif;
+        letter-spacing: 2.5px;
+        color: black;
+        text-transform: uppercase;
+        font-size: calc(14px + 2vmax);
+        line-height: calc(20px + 2vmax);
+      }
+
+      span {
+        font-family: "Playfair Display";
+        margin: 10px 0;
+        text-align: center;
+        font-size: calc(12px + 2vmax);
+      }
+
+      p {
+        font-size: calc(10px + 1vmax);
+        line-height: calc(16px + 1vmax);
+        padding: 0 15px;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+        color: #000;
+      }
+    }
+  }
+  .sustainability {
+    &_gallery {
+      flex-direction: column;
+      &_contr {
+        margin-top: 2rem;
+        width: 100%;
+      }
+    }
+  }
+}

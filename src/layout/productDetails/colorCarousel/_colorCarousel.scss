@@ -1,0 +1,44 @@
+.carousel-wrapper {
+  margin-top: 3rem;
+}
+
+.color-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  &_color {
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    background: #efd87e;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 1px 10px -4px #000000;
+    box-shadow: inset 0px 1px 10px -4px #000000;
+    cursor: pointer;
+  }
+  // &_enable {
+  //   border: 2px solid gray;
+  //   height: 40px;
+  //   width: 40px;
+  //   position: absolute;
+  //   background: transparent;
+  //   border-radius: 50%;
+  //   margin-top: -4px;
+  //   margin-left: -1px;
+  //   cursor: pointer;
+  // }
+  &_txt {
+    text-align: center;
+    margin-top: 8px;
+    padding: 0 8px;
+    &_title {
+      font-size: 11px;
+    }
+    &_price {
+      font-size: 11px;
+    }
+  }
+}

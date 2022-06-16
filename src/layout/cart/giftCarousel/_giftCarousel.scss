@@ -1,0 +1,38 @@
+@import "../../../_base.scss";
+
+.giftCarousel {
+  z-index: -999;
+  border: 2px solid #000;
+  margin: 2.5rem 0;
+  max-width: 600px;
+  &_header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 2rem 0;
+  }
+  &_main {
+    margin-bottom: 1rem;
+    &_cntr {
+      &_img {
+        //   height: 20px;
+        height: 280px;
+        width: 280px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .giftCarousel_main_cntr_img {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .giftCarousel {
+    max-width: 100%;
+  }
+}

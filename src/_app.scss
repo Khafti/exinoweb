@@ -1,0 +1,35 @@
+.app__container {
+  display: flex;
+  min-height: 100vh;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+.link-app {
+  text-decoration: underline;
+}
+
+.shadow-inner {
+  box-shadow: inset 0 0.3rem 3rem rgba(243, 240, 240, 0.1);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}

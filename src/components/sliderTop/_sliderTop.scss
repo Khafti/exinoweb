@@ -1,0 +1,25 @@
+@import "../../_base.scss";
+
+.awssld {
+  padding: 0 !important;
+}
+
+.sliderTop {
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  align-items: center;
+  margin-top: -4px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+@media screen and (max-width: $mobile) {
+  .sliderTop {
+    padding: 0 0.5rem;
+    font-size: 2vmax;
+  }
+}

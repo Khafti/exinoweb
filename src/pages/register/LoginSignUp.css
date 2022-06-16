@@ -1,0 +1,242 @@
+.LoginSignUpContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;
+  background: rgba(0, 0, 0, 0.658);
+}
+
+.loginClosed {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+  padding-right: 8px;
+  color: gray;
+  cursor: pointer;
+}
+
+.LoginSignUpBox {
+  background-color: white;
+  height: auto;
+  width: 450px;
+  overflow-y: auto;
+  padding-bottom: 2rem;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.78);
+}
+
+.loginToggleBtn {
+  display: flex;
+  width: 100%;
+  /* padding-top: 2rem; */
+}
+
+.loginToggleBtn-left {
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.loginToggleBtn-right {
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.loginForm,
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  transition: all 0.5s;
+}
+
+.signUpForm_icons {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.signUpForm_icons_icon {
+  width: 30%;
+}
+.signUpForm_icons_icon_item {
+  display: flex;
+  justify-content: center;
+}
+
+.signUpForm_icons_icon_txt {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.loginForm > div,
+.signUpForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.userInput {
+  outline: none;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #000;
+  padding: 5px 15px;
+  background: #fff;
+  font-size: 16px;
+  min-height: 40px;
+  margin-top: 1rem;
+}
+
+.userForgetPassword {
+  margin-top: 1rem;
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.userInputBtn {
+  outline: none;
+  width: 100%;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 5px 15px;
+  background: #fff;
+  font-size: 16px;
+  min-height: 40px;
+  margin-top: 1rem;
+  background: #000;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  transition: all 0.25s ease-in-out;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.or-Container {
+  /* height: 3rem; */
+  margin-top: 1rem;
+}
+.or-left {
+  border: 1px solid #000;
+  width: 35%;
+}
+.or-middle {
+  width: 30%;
+  text-align: center;
+}
+.or-right {
+  border: 1px solid #000;
+  width: 35%;
+}
+
+.login-other {
+  outline: none;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #000;
+  padding: 5px 15px;
+  background: #fff;
+  font-size: 16px;
+  min-height: 40px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#registerImage > img {
+  width: 3vmax;
+  border-radius: 100%;
+}
+#registerImage > input {
+  display: flex;
+  padding: 0%;
+}
+
+#registerImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 400 0.8vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+  background-color: rgb(255, 255, 255);
+}
+
+#registerImage > input::file-selector-button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.loginBtn,
+.signUpBtn {
+  border: none;
+  background-color: tomato;
+  color: white;
+  font: 300 0.9vmax "Roboto";
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.loginBtn:hover,
+.signUpBtn:hover {
+  background-color: rgb(179, 66, 46);
+}
+
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 540px) {
+  .LoginSignUpBox {
+    width: 95vw;
+    /* padding-bottom: 2rem; */
+  }
+  .loginForm,
+  .signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    transition: all 0.5s;
+  }
+}

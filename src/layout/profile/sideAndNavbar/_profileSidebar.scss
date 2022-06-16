@@ -1,0 +1,159 @@
+@import "../../../_base.scss";
+
+.ProfileNavbar {
+  display: none;
+}
+
+.ProfileNavAndSidebar {
+  display: flex;
+  &_left {
+    width: 300px;
+    padding: 2rem 2rem 0 0;
+    &_header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem;
+      &_logo {
+        background: #bd9a64;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+      }
+      &_name {
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 16px;
+      }
+    }
+
+    &_row {
+      margin: 5px 0;
+      padding: 20px 0 20px 16px;
+      font-size: 16px;
+      display: flex;
+      font-weight: 400;
+      cursor: pointer;
+      // background: #f8f8f8;
+    }
+  }
+  &_right {
+    width: calc(100% - 300px);
+    height: auto;
+    background: #f8f8f8;
+    padding: 2rem;
+    margin: 1rem 0 2rem 1rem;
+
+    &_header {
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #000;
+    }
+
+    &_row {
+      padding: 20px 0;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background: transparent;
+        padding: 4px 16px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+
+      &_col1 {
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      &_col2 {
+        font-weight: 400;
+        font-size: 16px;
+        color: gray;
+      }
+    }
+
+    input {
+      font-size: 16px;
+      outline: none;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid gray;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .ProfileNavbar {
+    display: block;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 2rem 0 2rem 2rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .ProfileNavAndSidebar {
+    display: flex;
+    &_left {
+      display: none;
+    }
+    &_right {
+      width: 100%;
+      background: #f8f8f8;
+      padding: 2rem;
+      margin: 0;
+
+      &_header {
+        display: none;
+        &_hr {
+          display: none;
+        }
+      }
+
+      &_row {
+        padding: 20px 0;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          background: transparent;
+          padding: 4px 16px;
+          font-size: 14px;
+          letter-spacing: 2px;
+          border: 1px solid #000;
+          cursor: pointer;
+        }
+
+        &_col1 {
+          font-weight: 600;
+          font-size: 13px;
+        }
+
+        &_col2 {
+          font-weight: 400;
+          font-size: 12px;
+          color: gray;
+        }
+      }
+
+      input {
+        font-size: 16px;
+        outline: none;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid gray;
+      }
+    }
+  }
+}

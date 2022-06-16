@@ -1,0 +1,278 @@
+@import "../../_base.scss";
+
+.checkout_main {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  &_left {
+    width: 50%;
+  }
+  &_right {
+    width: 48%;
+  }
+}
+
+.checkout {
+  min-height: 100vh;
+  padding: 1rem 0;
+
+  &_checkoutBox {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 4px 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &_icon {
+      height: 12px;
+      width: 12px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+  }
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_logo {
+      font-family: "Pacifico", cursive;
+      font-size: 44px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.849);
+    }
+
+    &_back {
+      display: flex;
+      align-items: center;
+      text-decoration: underline;
+    }
+  }
+
+  &_main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  &_leftTop {
+    border: 1px solid #000;
+    padding-bottom: 2rem;
+    width: 100%;
+    &_header {
+      border-bottom: 1px solid #000;
+      font-weight: 600;
+      padding: 1rem;
+    }
+    &_title {
+      padding: 5px 0 15px 0;
+      text-align: left;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 1rem;
+    }
+    &_feild {
+      padding: 1rem 1rem 0 1rem;
+      &_name {
+        font-weight: 500;
+        font-size: 12px;
+      }
+      &_input {
+        width: 100%;
+        max-width: 320px;
+        padding: 12px 5px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-family: "Ubuntu", Arial, Verdana;
+      }
+    }
+  }
+
+  &_billing {
+    border: 1px solid #000;
+    padding-bottom: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    &_header {
+      border-bottom: 1px solid #000;
+      font-weight: 600;
+      padding: 1rem;
+    }
+    &_title {
+      // padding: 5px 0 15px 0;
+      text-align: left;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 1rem 1rem 0 1rem;
+    }
+    &_feild {
+      padding: 1rem 1rem 0 1rem;
+      &_name {
+        font-weight: 500;
+        font-size: 12px;
+      }
+      &_input {
+        width: 100%;
+        max-width: 320px;
+        padding: 12px 5px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-family: "Ubuntu", Arial, Verdana;
+      }
+    }
+  }
+
+  &_payment {
+    border: 1px solid #000;
+    padding-bottom: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    &_header {
+      border-bottom: 1px solid #000;
+      font-weight: 600;
+      padding: 1rem;
+    }
+    &_title {
+      // padding: 5px 0 15px 0;
+      text-align: left;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 1rem 1rem 0 1rem;
+    }
+    &_feild {
+      padding: 1rem 1rem 0 1rem;
+      &_name {
+        font-weight: 500;
+        font-size: 12px;
+      }
+      &_input {
+        width: 100%;
+        max-width: 320px;
+        padding: 12px 5px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-family: "Ubuntu", Arial, Verdana;
+      }
+    }
+  }
+
+  &_Right {
+    border: 1px solid #000;
+    //  width: 48%;
+    height: fit-content;
+    &_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    &_col {
+      font-weight: 500;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    &_para {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &_btn {
+      background: black;
+      color: #fff;
+      border: none;
+      height: 45px;
+      width: 200px;
+      font-weight: normal;
+      -webkit-appearance: none;
+      letter-spacing: 3px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer;
+    }
+    &_return {
+      color: gray;
+      text-decoration: underline;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.creditCardBoxWrapper {
+  padding: 1rem;
+}
+.creditCardBox {
+  padding: 1rem;
+  border: 1px solid rgba(255, 99, 71, 0.651);
+  background: rgba(128, 128, 128, 0.075);
+}
+
+@media screen and (max-width: $tablet) {
+  .checkout {
+    &_top {
+      flex-direction: column;
+      align-items: flex-start;
+      &_logo {
+        font-size: 40px;
+      }
+      &_back {
+        margin: 1rem 0;
+      }
+    }
+  }
+  .checkout_main {
+    display: flex;
+    flex-direction: column-reverse;
+    &_left {
+      width: 100%;
+    }
+    &_right {
+      width: 100%;
+    }
+  }
+  .checkout {
+    &_checkoutBox {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      padding: 4px 1rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &_icon {
+        height: 12px;
+        width: 12px;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+    }
+
+    &_Right {
+      margin-bottom: 2rem;
+    }
+
+    &_footer {
+      &_para {
+        text-align: center;
+      }
+      &_return {
+        text-align: center;
+      }
+    }
+  }
+}

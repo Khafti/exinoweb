@@ -1,0 +1,467 @@
+@import "../../_base.scss";
+
+.banner-1 {
+  background-image: url("https://cdn.oakandluna.com/images/site/main_DT_md_v2.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  max-height: 800px;
+}
+
+@media screen and (max-width: $tablet) {
+  .banner-1 {
+    background-position: left;
+    height: 90vmin;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .banner-1 {
+    background-position: left;
+    height: 70vmin;
+  }
+}
+
+.section-2 {
+  display: flex;
+}
+
+.banner-2 {
+  background-image: url("https://cdn.oakandluna.com/images/General/fine-jewelry_box1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vmin;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 10px 5px 5px 0;
+  max-height: 800px;
+}
+
+.banner-3 {
+  background-image: url("https://cdn.oakandluna.com/images/General/box2_md_v1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vmin;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 10px 0 5px 5px;
+  max-height: 800px;
+}
+
+.home-trending-section {
+  margin-top: 4rem;
+  color: #404040;
+  margin-bottom: 7rem;
+}
+.title-trending {
+  margin-bottom: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-4 {
+  background-image: url("https://cdn.oakandluna.com/images/site/lower_banner_DT_md_v2.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  max-height: 800px;
+}
+@media screen and (max-width: $tablet) {
+  .banner-4 {
+    background-position: left;
+    height: 65vmin;
+  }
+}
+
+.banner-5 {
+  background-image: url("https://cdn.oakandluna.com/images/General/engraved-jewelry_box3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vmin;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 10px 5px 5px 0;
+  max-height: 800px;
+}
+
+.banner-6 {
+  background-image: url("https://cdn.oakandluna.com/images/General/box2_md_v1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vmin;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 10px 0 5px 5px;
+  max-height: 800px;
+}
+
+.banner-7 {
+  background-image: url("https://cdn.oakandluna.com/images/General/initial-jewelry_box5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vmin;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 5px 5px 0 0;
+  max-height: 800px;
+}
+
+.banner-8 {
+  background-image: url("https://cdn.oakandluna.com/images/General/boxes6_md_v1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vmin;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 5px 0 0 5px;
+  max-height: 800px;
+}
+
+.title-connection-forever {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 5px;
+  font-size: 2.1em;
+  cursor: pointer;
+
+  &:hover {
+    color: #404040;
+  }
+}
+
+.title-connection-forever-subtitle {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 5px;
+  font-size: 2.1em;
+  cursor: pointer;
+
+  &:hover {
+    color: #404040;
+  }
+}
+
+.home-icon-txt {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      color: #404040;
+    }
+
+    &_icon {
+      font-size: 64px;
+    }
+
+    &_p {
+      font-size: 1.3em;
+      font-weight: 300;
+      letter-spacing: 0.11em;
+    }
+  }
+}
+
+.home-more-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  button {
+    border: none;
+    background: #fff;
+    margin: 40px 0 0;
+    padding: 14px 35px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(0, 0, 0);
+    }
+  }
+}
+
+.trustpilot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  &_title {
+    font-size: 28px;
+  }
+  &_link {
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 14px;
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+.home-contact-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_title {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: 1.08px;
+  }
+  &_container {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  &_field {
+    padding: 5px 15px;
+    min-height: 40px;
+    outline: none;
+  }
+  &_btn {
+    padding: 5px 35px;
+    background: #000;
+    min-height: 40px;
+    line-height: 1.5;
+    cursor: pointer;
+    border: 1px solid #000;
+    color: rgb(255, 255, 255);
+    height: auto;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.25s ease-in-out;
+    letter-spacing: 1.08px;
+    margin-left: 8px;
+
+    &:hover {
+      background: gray;
+      border-color: gray;
+    }
+  }
+}
+
+.banner-direction {
+  display: flex;
+}
+
+@media screen and (max-width: $laptop) {
+  .home-trending-section {
+    margin-top: 0;
+  }
+  .title-trending {
+    margin-top: 4rem;
+    font-size: 4vmax;
+    margin-bottom: 1.5rem;
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  // .home-trending-section {
+  //   margin-top: 0;
+  // }
+  // .title-trending {
+  //   margin-top: 4rem;
+  //   font-size: 4vmax;
+  //   margin-bottom: 1.5rem;
+  //   display: flex;
+  //   text-align: center;
+  // }
+  .banner-2 {
+    height: 50vh;
+  }
+  .banner-3 {
+    height: 50vh;
+  }
+  .banner-4 {
+    height: 50vh;
+  }
+  .banner-5 {
+    height: 50vh;
+  }
+  .banner-6 {
+    height: 50vh;
+  }
+  .banner-7 {
+    height: 50vh;
+  }
+  .banner-8 {
+    height: 50vh;
+  }
+  .title-connection-forever {
+    font-size: 3vmax;
+  }
+
+  .title-connection-forever-subtitle {
+    font-size: 2vmax;
+  }
+
+  .home-icon-txt {
+    flex-direction: column;
+  }
+  .home-icon-txt {
+    &_item {
+      &_icon {
+        margin-top: 1rem;
+        font-size: 16vmax;
+      }
+      &_p {
+        font-size: 2.5vmax;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .banner-direction {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-2 {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .banner-3 {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .banner-5 {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .banner-6 {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .banner-7 {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .banner-8 {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  // .home-trending-section {
+  //   margin-top: 0;
+  //   margin-bottom: 7rem;
+  // }
+  // .title-trending {
+  //   margin-top: 4rem;
+  //   font-size: 4vmax;
+  //   margin-bottom: 0;
+  //   display: flex;
+  //   text-align: center;
+  // }
+  .title-connection-forever {
+    font-size: 2vmax;
+  }
+  .title-connection-forever {
+    font-size: 3vmax;
+  }
+
+  .title-connection-forever-subtitle {
+    font-size: 2vmax;
+  }
+  .home-contact-input {
+    &_title {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    &_container {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &_field {
+      padding: 5px 15px;
+      min-height: 40px;
+      outline: none;
+    }
+    &_btn {
+      margin-left: 0;
+      margin-top: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .title-connection-forever-subtitle {
+    font-size: 1.5vmax;
+  }
+}

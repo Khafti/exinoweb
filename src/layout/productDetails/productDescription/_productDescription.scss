@@ -1,0 +1,128 @@
+@import "../../../_base.scss";
+
+.products-details-tab {
+  // min-height: 400px;
+  margin-bottom: 3rem;
+  &_name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 3.25;
+    padding: 0 16px;
+  }
+
+  &_paragraph {
+    line-height: 1.5em;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 1.5rem;
+  }
+
+  &_Table {
+    padding: 8px 0;
+    padding-left: 20px;
+    &_left {
+      width: 200px;
+      font-weight: normal;
+      font-size: 14px;
+    }
+    &_right {
+      width: 60%;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+
+  &_TableShipping {
+    width: 100%;
+    // background: gray;
+    padding: 20px 0;
+    padding-left: 20px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    &_left {
+      width: 40%;
+      font-weight: normal;
+      font-size: 14px;
+    }
+    &_right {
+      width: 60%;
+      font-weight: normal;
+      font-size: 14px;
+    }
+    &_bottom_txt {
+      padding: 3px 0;
+      font-size: 14px;
+      padding-left: 32px;
+    }
+    &_bottom_icons {
+      display: flex;
+      margin-top: 24px;
+      margin-left: 20px;
+    }
+    &_bottom_icon {
+      display: flex;
+      align-items: center;
+    }
+    &_bottom_icon_txt {
+      font-size: 14px;
+      margin-left: 8px;
+      border-bottom: 1px solid #000;
+      cursor: pointer;
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+}
+
+.products-details-mobi_dropdown {
+  display: none;
+}
+
+@media screen and (max-width: $laptop) {
+  .products-details-tab {
+    &_name {
+      font-size: 14px;
+      letter-spacing: 3px;
+      line-height: 3.25;
+      padding: 0 12px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .products-details-tab {
+    &_name {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 3.25;
+      padding: 0 8px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .products-details-tab {
+    display: none;
+  }
+  .products-details-mobi_dropdown {
+    display: block;
+    &_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 500;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      padding: 16px 4px;
+      cursor: pointer;
+    }
+    &_paragraph {
+      font-size: 14px;
+      padding: 16px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// @import "../../../_base.scss";
+
+.productSlider {
+  height: 50vh;
+}
+
+.productSlider-img-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.productSlider-img {
+  width: 24%;
+}
+
+// $setLaptop: $laptop + 1;
+@media screen and (min-width: 801px) {
+  .productSliderForTab {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .productSliderForDesktop {
+    display: none;
+  }
+  .productSlider-img {
+    width: 50vw;
+    margin: 0 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .productSliderForTab {
+    display: none;
+  }
+}
+
+// $tabletSet: $tablet + 1;
+@media screen and (min-width: 501px) {
+  .productSliderForMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .productSlider-img {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../_base.scss";
+
+.ordertracking {
+  min-height: 100vh;
+
+  &_title {
+    padding: 30px;
+    padding-top: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    display: block;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 2.5px;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  &_subtitle {
+    font-size: 15px;
+    color: #000;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    padding-left: 20px;
+  }
+
+  &_container {
+    padding-left: 40px;
+    &_name {
+      font-size: 16px;
+      padding-top: 10px;
+      padding-bottom: 4px;
+      margin-top: 0.5rem;
+    }
+
+    &_input {
+      width: 335px;
+      height: 40px;
+      border: 1px solid #b0a9a9;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1px 2px;
+    }
+  }
+
+  &_btn_container {
+    padding-left: 40px;
+  }
+
+  &_btn {
+    margin-top: 1rem;
+    width: 335px;
+    font-size: 15px;
+    background: #000;
+    color: #fff;
+    letter-spacing: 2px;
+    height: 45px;
+    border: none;
+    text-decoration: none;
+    -webkit-appearance: none;
+    box-shadow: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .ordertracking {
+    &_title {
+      font-size: calc(14px + 3vmax);
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    &_subtitle {
+      padding-left: 0;
+    }
+
+    &_container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &_input {
+        width: 100%;
+      }
+    }
+
+    &_btn_container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &_btn {
+      width: 100%;
+      font-size: 2vmax;
+    }
+  }
+}

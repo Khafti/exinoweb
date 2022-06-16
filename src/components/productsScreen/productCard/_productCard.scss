@@ -1,0 +1,84 @@
+@import "../../../_base.scss";
+
+.product-image {
+  width: 100%;
+  height: 22vw;
+  max-height: 300px;
+  // width: 100%;
+  cursor: pointer;
+}
+
+.productCard {
+  width: 30%;
+  // border: 1px solid #000;
+  height: fit-content;
+  margin-bottom: 5rem;
+
+  &_colorChoice {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+
+    &_more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &_colorChoice_Item {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #cbcbcb;
+    margin: 3px;
+    cursor: pointer;
+  }
+
+  &_color_active {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    z-index: -999;
+    margin-top: -3px;
+    margin-left: -3px;
+    border: 1px solid #000;
+  }
+
+  &_productName {
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 8px;
+  }
+
+  &_price {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .product-image {
+    width: 46vw;
+    height: 46vw;
+    cursor: pointer;
+  }
+
+  .productCard {
+    width: 46vw;
+    height: fit-content;
+    margin-bottom: 5rem;
+  }
+}
